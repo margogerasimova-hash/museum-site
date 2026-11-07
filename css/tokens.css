@@ -1,0 +1,51 @@
+/* Software and Computer Museum: токени дизайн-системи.
+   Джерело: claude.ai/artifact/1aeoPS4YtjyrDPZevnT34K (tokens.json). */
+:root {
+  /* Кольори */
+  --primary: #42578c;
+  --accent: #fae530;          /* лише кнопки дзвінка й запису на курс */
+  --accent-hover: #e0c905;
+  --accent-pressed: #d1bc05;
+  --brand-grey: #787f81;
+  --ink: #1f2430;
+  --ink-muted: #4a5262;
+  --surface: #f7f8fa;
+  --surface-alt: #eef1f6;
+  --on-color: #ffffff;
+  --on-accent: var(--ink);
+  --border: var(--brand-grey);
+  --focus: var(--primary);
+  --focus-on-dark: var(--on-color);
+  --overlay: rgba(66, 87, 140, 0.85);
+
+  /* Шрифти */
+  --font-hero: "Press Start 2P", "Courier New", monospace;
+  --font-display: "Unbounded", Arial, sans-serif;
+  --font-body: "Charis SIL", Georgia, serif;
+
+  /* Відступи */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 80px;
+
+  /* Заокруглення */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Тіні */
+  --shadow-pressed: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 12px 24px rgba(31, 36, 48, 0.18);
+
+  /* Розміри */
+  --control-height: 56px;
+  --target-min: 44px;
+  --content-width: 1120px;
+  --text-width: 680px;
+  --call-button: 64px;
+}

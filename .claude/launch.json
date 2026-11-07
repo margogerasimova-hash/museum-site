@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "museum-site",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8080", "--bind", "127.0.0.1"],
+      "port": 8080
+    },
+    {
+      "name": "museum-site-8082",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8082", "--bind", "127.0.0.1"],
+      "port": 8082,
+      "autoPort": false
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software and Computer Museum — сайт у розробці</title>
+  <meta name="description" content="Сайт Software and Computer Museum у Харкові зараз у розробці.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Press+Start+2P&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #42578C;
+      --accent: #FAE530;
+      --white: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: var(--primary);
+      color: var(--white);
+      font-family: "Charis SIL", Georgia, serif;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    main { max-width: 900px; }
+
+    .mark {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 32px;
+      background: var(--accent);
+    }
+
+    h1 {
+      margin: 0 0 32px;
+      font-family: "Unbounded", system-ui, sans-serif;
+      font-weight: 700;
+      font-size: clamp(32px, 6vw, 56px);
+      line-height: 1.2;
+    }
+
+    .status {
+      margin: 0;
+      font-family: "Press Start 2P", monospace;
+      font-size: clamp(16px, 2.6vw, 22px);
+      line-height: 1.8;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.7em;
+      height: 1em;
+      margin-left: 0.2em;
+      vertical-align: -0.1em;
+      background: var(--accent);
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cursor { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="mark" aria-hidden="true"></span>
+    <h1>Software and Computer Museum</h1>
+    <p class="status">Сайт у розробці<span class="cursor" aria-hidden="true"></span></p>
+  </main>
+</body>
+</html>
