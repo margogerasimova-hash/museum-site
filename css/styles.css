@@ -350,6 +350,7 @@ a:hover { color: var(--ink); }
   font-size: 18px;
   line-height: 28px;
 }
+.footer-copy { flex-basis: 100%; }
 
 /* ---------- Сторінка курсів ---------- */
 .hero--page .hero-inner { gap: var(--space-5); padding-top: clamp(40px, 6vw, 72px); padding-bottom: clamp(48px, 7vw, 88px); }
