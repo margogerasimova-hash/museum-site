@@ -41,4 +41,25 @@
       }
     });
   }
+
+  // Кнопка «Нагору»: з’являється, коли прокрутили більше ніж на екран.
+  // Без JS вона лишається прихованою (атрибут hidden), бо нічого б не робила.
+  var toTop = document.querySelector('.to-top');
+  if (toTop) {
+    var updateToTop = function () {
+      toTop.hidden = window.scrollY < window.innerHeight;
+    };
+    window.addEventListener('scroll', updateToTop, { passive: true });
+    updateToTop();
+
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+      // Фокус на початок сторінки, щоб клавіатура теж «піднялася»
+      var main = document.getElementById('main');
+      if (main) {
+        if (!main.hasAttribute('tabindex')) main.setAttribute('tabindex', '-1');
+        main.focus({ preventScroll: true });
+      }
+    });
+  }
 })();

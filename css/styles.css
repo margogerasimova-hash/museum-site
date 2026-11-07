@@ -152,6 +152,34 @@ a:hover { color: var(--ink); }
 }
 .call:hover { background: var(--accent-hover); color: var(--on-accent); }
 
+/* Кнопка «Нагору»: ліворуч від кнопки дзвінка, по центру її висоти.
+   Жовтий акцент лише для дзвінка й запису, тож тут основний синій. */
+.to-top {
+  position: fixed;
+  right: calc(var(--space-4) + var(--call-button) + var(--space-3));
+  bottom: calc(var(--space-4) + (var(--call-button) - var(--control-height)) / 2);
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--control-height);
+  height: var(--control-height);
+  padding: 0;
+  border: 2px solid var(--on-color);
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--on-color);
+  box-shadow: 0 12px 24px rgba(31, 36, 48, 0.25);
+  cursor: pointer;
+  transition: background-color 120ms ease, transform 80ms ease;
+}
+.to-top[hidden] { display: none; }
+.to-top:hover { background: var(--ink); }
+.to-top:active { box-shadow: var(--shadow-pressed); transform: translateY(1px); }
+.to-top:focus-visible { outline-color: var(--primary); outline-offset: 3px; }
+/* main отримує фокус після «Нагору»; рамка навколо всієї сторінки не потрібна */
+main:focus { outline: none; }
+
 /* ---------- Картки ---------- */
 .card {
   display: flex;
@@ -496,6 +524,10 @@ a:hover { color: var(--ink); }
   .hero-card { padding: var(--space-4); }
   .card { padding: var(--space-4); }
   .call { right: var(--space-3); bottom: var(--space-3); }
+  .to-top {
+    right: calc(var(--space-3) + var(--call-button) + var(--space-3));
+    bottom: calc(var(--space-3) + (var(--call-button) - var(--control-height)) / 2);
+  }
   /* щоб кругла кнопка не закривала останні посилання підвалу */
   .site-footer { padding-bottom: calc(var(--call-button) + var(--space-3)); }
 }
@@ -505,6 +537,7 @@ a:hover { color: var(--ink); }
   html { scroll-behavior: auto; }
   .lift, .lift:hover { transition: none; transform: none; }
   .caret { animation: none; }
-  .btn { transition: none; }
+  .btn, .to-top { transition: none; }
+  .to-top:active { transform: none; }
   .btn-primary:active { transform: none; }
 }
