@@ -314,6 +314,24 @@ main:focus { outline: none; }
 /* Сторінка exhibits.html */
 .exhibit-body .facts { padding: var(--space-2) 0; border-top: 2px dashed var(--surface-alt); border-bottom: 2px dashed var(--surface-alt); }
 .exhibits-all { align-self: flex-start; }
+.exhibit .exhibit-body { flex: 1; }
+/* Заглушка замість фото, поки знімка експоната немає */
+.exhibit-nophoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  aspect-ratio: 1 / 1;
+  background: var(--primary);
+  color: var(--on-color);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* Посилання «Читати статтю» / «Подивитися експонат»: як «До курсів ↓» на головній */
+.more-link { align-self: flex-start; font-weight: 700; }
+.exhibit-body .more-link { margin-top: auto; padding-top: var(--space-2); }
 
 /* ---------- Екскурсія ---------- */
 .rounded-photo { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); }
