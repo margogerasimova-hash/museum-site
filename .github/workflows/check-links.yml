@@ -1,0 +1,21 @@
+name: Перевірка посилань
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    name: Биті посилання й файли
+    runs-on: ubuntu-latest
+    steps:
+      - name: Отримати файли сайту
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Перевірити посилання, зображення й стилі
+        run: python3 .github/scripts/check_links.py
