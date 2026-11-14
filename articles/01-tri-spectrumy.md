@@ -54,11 +54,15 @@ ZX Spectrum — домашній комп'ютер, у якого з'явило�
 
 Плануючи візит, уточніть у працівників музею, які з цих комп'ютерів зараз виставлено. «Ікар-64», як ми вже зазначили, у постійній експозиції наразі відсутній. А поки що можна зазирнути на сайт музею, у каталог клонів ZX Spectrum, і знайти там усіх трьох «родичів».
 
+## Читайте також
+
+- «Комп'ютери, яких ви не бачили: як українські ЕОМ керували заводами, станціями й ракетами» — про «Хартрон» та інші українські ЕОМ (стаття готується)
+
 ## Джерела
 
 - [Сайт музею: «Ікар-64», харківський клон](https://spectrum.sncmuseum.org/en/history/ikar-64-kharkiv-clone/)
 - [Сайт музею: каталог клонів ZX Spectrum](https://spectrum.sncmuseum.org/en/clones/)
 - [Сайт музею: Spectrum за залізною завісою](https://spectrum.sncmuseum.org/en/history/spectrum-behind-iron-curtain/)
-- [Англійська Вікіпедія: Robik](https://en.wikipedia.org/wiki/Robik)
+- [Англійська Вікіпедія: Robik](https://en.wikipedia.org/wiki/Robik) (дата звернення: 14.11.2026)
 - [078.com.ua: виставка комп'ютерної техніки 1980-х у «Ландау Центрі»](https://www.078.com.ua/articles/3929-v-landaucentre-vystavka-osobennosti-kompyuternoi-tehniki-1980-h-godov.html)
 - [Віртуальний музей icfcst.kiev.ua: «Енергія» і «Хартрон»](https://www.icfcst.kiev.ua/MUSEUM/PHOTOS/Energiya_u.html)
